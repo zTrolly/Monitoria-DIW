@@ -7,8 +7,9 @@ const senha = document.getElementById("senha");
 
 //Criamos a função de logar
 function logar(){
+
     //verificamos se o valor do campo email e senha são os mesmos do perfil criado
-  if(email.value =="admin@admin.com" && senha.value=="admin123"){
+    if(email.value =="admin@admin.com" && senha.value=="admin123"){
 
     //Se o valor for o mesmo criamos no localStorag o item acesso com o valor true
     localStorage.setItem("acesso", true);
