@@ -46,8 +46,8 @@ section{
 }
 
 .active:root{
-  --color-font: #ffffff;
-  --color-body:  #00043a;
+  --color-font: #f5cb5c;
+  --color-body:  #333533;
 }
 
 i{
