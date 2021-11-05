@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Criamos as var() para tornar a cor do site dinamica*/
 :root{
   --color-font: #00043a;
   --color-body: #ffffff;
@@ -41,10 +41,12 @@ section{
   cursor: pointer;
 }
 
+/*Quando a lampada estiver com disabled ela nn aparece*/
 .disabled{
   display: none;
 }
 
+/*Trocamos os valores das var() quando a class active existir*/
 .active:root{
   --color-font: #f5cb5c;
   --color-body:  #333533;
