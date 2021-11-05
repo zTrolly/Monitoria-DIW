@@ -17,3 +17,5 @@ if(logado!=true){
   alert("usuário não autenticado!");
   window.location.href ="login.html";
 }
+
+const darkmodeBTN = document.getElementById("darkmodeBTN");
