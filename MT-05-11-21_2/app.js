@@ -19,6 +19,7 @@ function leDados () {
 
 function salvaDados (dados) {
     localStorage.setItem ('db', JSON.stringify (dados));
+   
 }
 
 function incluirContato (){
@@ -58,4 +59,11 @@ function imprimeDados () {
 // Configura os botões
 document.getElementById ('btnCarregaDados').addEventListener ('click', imprimeDados);
 document.getElementById ('btnIncluirContato').addEventListener ('click', incluirContato);
+
+
+function getSelectValue(){
+    let selectValue = document.getElementById('select').value;
+    console.log(selectValue);
+}
+
 
