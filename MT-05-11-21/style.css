@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-font: #00043a;
+  --color-body: #ffffff;
+}
+
+.title{
+  font-family:'VT323';
+  color: var(--color-font);
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-body);
+  transition: 01s;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn_mode_dark{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 1rem;
+  font-size: 50px;
+}
+
+.disabled{
+  display: none;
+}
+
+.active:root{
+  --color-font: #ffffff;
+  --color-body:  #00043a;
+}
+
+i{
+  color: var(--color-font);
+}
