@@ -36,6 +36,9 @@ section{
   justify-content:center;
   margin-bottom: 1rem;
   font-size: 50px;
+  width:fit-content;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .disabled{
