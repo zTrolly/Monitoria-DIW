@@ -1,25 +1,22 @@
 function leDados () {
     let strDados = localStorage.getItem('db');
     let objDados = {};
-
     if (strDados) {
         objDados = JSON.parse (strDados);
     }
     else {
-        objDados = { contatos: [ 
-                        {nome: "João da Silva", telefone: "31-98795-5587", email: "email1"}, 
-                        {nome: "Maria das Graças", telefone: "31-98795-5547", email: "email2"}, 
-                        {nome: "Pedro Gomes", telefone: "31-98795-6577", email: "email3"} 
+        objDados = { receptor: [
+                        {nome: "João da Silva", telefone: "31-98795-5587", email: "email1"},
+                        {nome: "Maria das Graças", telefone: "31-98795-5547", email: "email2"},
+                        {nome: "Pedro Gomes", telefone: "31-98795-6577", email: "email3"}
                     ]}
     }
-
     return objDados;
 }
 
 
 function salvaDados (dados) {
     localStorage.setItem ('db', JSON.stringify (dados));
-   
 }
 
 function incluirContato (){
