@@ -1,0 +1,252 @@
+body{
+  background-color: #1c1f23;
+}
+.projetos_mob{
+  display: none;
+}
+.btn-outline-success {
+  color: crimson;
+  border-color: crimson;
+}
+.btn-outline-success{
+  outline: white;
+}
+.btn-outline-success:hover{
+  background-color: crimson;
+  color: #fff;
+  border: crimson;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: crimson;
+  font-family: monospace;
+  letter-spacing: .2rem;
+  transition: .3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #fff;
+  letter-spacing: .3rem ;
+  transition: .3s;
+}
+header{
+  margin-bottom: 30px;
+}
+.perfil_img img{
+  width: 100%;
+}
+.perfil{
+  color: #fff;
+}
+.perfil strong{
+  color:  crimson;
+}
+.perfil_social{
+  margin-top: 60px;
+}
+.redes_sociais{
+  padding: 0px;
+}
+
+.redes_sociais li{
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 30px;
+  padding: 0px;
+
+}
+
+.redes_sociais li a{
+  color: crimson;
+  transition:all .3s;
+}
+
+.redes_sociais li a :hover{
+  color: #fff;
+  transition:all .3s;
+}
+
+.cima{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown{
+  justify-content: end;
+  justify-self: end;
+  align-self: flex-end;
+  outline: none;
+}
+
+#dropdownMenuButton1:hover{
+  background-color: crimson;
+  color: #fff;
+}
+.btn:hover{
+  background-color: crimson;
+  color: #fff;
+}
+.titulo{
+  font-family: Poppins;
+  font-weight: 700;
+  color: crimson;
+}
+
+
+.lista_projetos{
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.card{
+  border: none;
+  background-color: #1c1f23;
+}
+.card-body{
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+#projetos .card{
+  color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+#projetos .card:hover{
+  transform: scale(102%);
+}
+
+.btn_projetos{
+  display: flex;
+  justify-content: flex-end;
+  border-top: 25px;
+}
+
+.carregar{
+  width: max-content;
+}
+
+.lista_experiencia{
+  margin-top: 25px;
+}
+.experiencia_txt{
+  padding: 15px;
+}
+.experiencia img{
+  border-radius: 10px;
+
+}
+.text-muted{
+  font-size: larger;
+  color: #1c1f23;
+}
+
+.card-title{
+  font-size: xx-large;
+  font-family: Poppins;
+  color: white;
+}
+
+.card-text{
+  color: #fff;
+}
+
+.icon_repo{
+  font-size: xx-large;
+  color:  white;
+  background-color: #1c1f23;
+  padding: .5rem ;
+  border-radius: 50%;
+  height: max-content;
+  margin-right: .5rem
+}
+
+.card_repositorio{
+  display: flex;
+}
+
+.lista_repositorio{
+  margin-top: 30px;
+}
+
+.github{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.bg{
+  background-color: aliceblue;
+}
+.conteudo{
+  padding: 24px;
+}
+.lista_conteudo{
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #1c1f23;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  align-content: center;
+}
+footer img{
+  width: 100px;
+}
+footer p{
+  justify-self: center;
+}
+.conteudo .carregar{
+  margin-bottom: 30px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+hr{
+  color: crimson;
+  border-radius: 50%;
+}
+
+.nome{
+  font-family: monospace;
+}
+
+body{
+  font-family: poppins;
+}
+.lista_conteudo b ,.lista_conteudo strong{
+  color: crimson;
+}
+.lista_conteudo{
+  color: #fff	;
+}
+.card-body p{
+  margin-bottom: 0px;
+}
+
+@media(max-width: 768px){
+  .projetos{
+    display: none;
+  }
+  .projetos_mob{
+    display: block;
+  }
+  .carousel_content{
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    background-color: crimson;
+    
+  }
+ #carouselExampleCaptions .carousel-indicators .teste{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  #carouselExampleCaptions .carousel-indicators .active{
+   background-color: crimson;
+  }
+}

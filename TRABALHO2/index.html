@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/6200a03cb8.js" crossorigin="anonymous"></script>
+
+  <title>Blog</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#perfil">PERFIL </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">PROJETOS </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#experiencia">EXPERIÊNCIA </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#github">GITHUB </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#conteudo">CONTEÚDO </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="row perfil" id="perfil">
+      <div class="perfil_img col-md-6 col-lg-6 col-sm-12">
+        <img src="./imgs/khader-bini-RPF4IvnWvNQ-unsplash.jpg" alt="">
+      </div>
+      <div class="perfil_txt col-md-6 col-lg-6 col-sm-12">
+        <h1 class="nome">Ademilson JR <strong>.</strong></h1>
+        <p><strong>Objetivos:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nesciunt numquam, necessitatibus reiciendis nemo praesentium ducimus tempora iusto ipsa suscipit nisi sint, tenetur debitis! Neque maxime obcaecati voluptas ipsum aliquid?</p>
+        <div class="perfil_social">
+          <h4>Redes Sociais</h4>
+          <ul class="redes_sociais">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram "></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="row projetos" id="projetos">
+      <div class=" cima">
+        <div class="projetos_titulo">
+          <h2 class="titulo">Projetos</h2>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Categoria: <strong>TODOS</strong>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Web Sites</a></li>
+            <li><a class="dropdown-item" href="#">Arte Gráfica</a></li>
+            <li><a class="dropdown-item" href="#">Podcast</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row lista_projetos ">
+        <div class="card col-md-6 col-lg-3 col-sm-12">
+          <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-text">Projeto A - 2021</h4>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3 col-sm-12">
+          <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-text">Projeto B - 2021 </h4>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3 col-sm-12">
+          <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-text">Projeto C - 2020 </h4>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3 col-sm-12">
+          <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-text">Projeto D - 2019 </h4>
+          </div>
+        </div>
+      </div>
+      <div class=" btn_projetos">
+        <button type="button" class="btn btn-dark carregar">+ Carregar mais projetos</button>
+      </div>
+    </section>
+    <section class=" row projetos_mob">
+      <div class=" cima">
+        <div class="projetos_titulo">
+          <h2 class="titulo">Projetos</h2>
+        </div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active text-secondary teste" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="teste"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="teste"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel_content">
+              <h4 class="card-text text_carousel">Projeto A - 2021</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel_content">
+              <h4 class="card-text text_carousel">Projeto A - 2021</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/xps-yNvVnPcurD8-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel_content">
+              <h4 class="card-text text_carousel">Projeto A - 2021</h4>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="row experiencia" id="experiencia">
+      <div class=" cima">
+        <div class="projetos_titulo">
+          <h2 class="titulo">Experiência</h2>
+        </div>
+      </div>
+      <div class="col lista_experiencia">
+        <div class="card mb-3 desc_experiencia">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./imgs/rajeshwar-bachu-K4txLik7pnY-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 experiencia_txt">
+              <div class="card-body">
+                <h5 class="card-title">Cargo / Função</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim porro quaerat necessitatibus cum? Quaerat, atque omnis aliquam magni est reprehenderit ipsum dolorem totam numquam in iure, odio fugit quis sed ducimus fugiat nemo aut.</p>
+                <p class="card-text"><small class="text-muted">Périodo: 01/2015 a 09/2016</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card mb-3 desc_experiencia">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./imgs/rajeshwar-bachu-K4txLik7pnY-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 experiencia_txt">
+              <div class="card-body">
+                <h5 class="card-title">Cargo/Função</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim porro quaerat necessitatibus cum? Quaerat, atque omnis aliquam magni est reprehenderit ipsum dolorem totam numquam in iure, odio fugit quis sed ducimus fugiat nemo aut.</p>
+                <p class="card-text"><small class="text-muted">Périodo: 01/2015 a 09/2016</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card mb-3 desc_experiencia">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./imgs/rajeshwar-bachu-K4txLik7pnY-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 experiencia_txt">
+              <div class="card-body">
+                <h5 class="card-title">Cargo / Função</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim porro quaerat necessitatibus cum? Quaerat, atque omnis aliquam magni est reprehenderit ipsum dolorem totam numquam in iure, odio fugit quis sed ducimus fugiat nemo aut.</p>
+                <p class="card-text"><small class="text-muted">Périodo: 01/2015 a 09/2016</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" btn_projetos">
+        <button type="button" class="btn btn-dark carregar">+ Carregar mais experiência</button>
+      </div>
+    </section>
+  </main>
+  <div class="bg">
+    <section class="container row github" id="github">
+      <div class=" cima">
+        <div class="projetos_titulo">
+          <h2 class="titulo">Repositório GitHub</h2>
+        </div>
+      </div>
+      <div class="row lista_repositorio">
+        <div class="card_repositorio col-lg-4">
+          <i class="fas fa-folder icon_repo"></i>
+          <article>
+            <h5 class="title_repo">Repositório A</h5>
+            <p class="card_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit rerum in amet debitis obcaecati ullam blanditiis expedita pariatur quibusdam nobis labore recusandae laudantium hic voluptatibus nesciunt, tenetur non. Beatae, ipsam!</p>
+            <p class="card_txt"><b><small class="text-muted">Atualizado em:02/09/2020</small></b></p>
+          </article>
+        </div>
+        <div class="card_repositorio col-lg-4">
+          <i class="fas fa-folder icon_repo"></i>
+          <article>
+            <h5 class="title_repo">Repositório B</h5>
+            <p class="card_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit rerum in amet debitis obcaecati ullam blanditiis expedita pariatur quibusdam nobis labore recusandae laudantium hic voluptatibus nesciunt, tenetur non. Beatae, ipsam!</p>
+            <p class="card_txt"><b><small class="text-muted">Atualizado em:02/09/2020</small></b></p>
+
+          </article>
+        </div>
+        <div class="card_repositorio col-lg-4">
+          <i class="fas fa-folder icon_repo"></i>
+          <article>
+            <h5 class="title_repo">Repositório C</h5>
+            <p class="card_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit rerum in amet debitis obcaecati ullam blanditiis expedita pariatur quibusdam nobis labore recusandae laudantium hic voluptatibus nesciunt, tenetur non. Beatae, ipsam!</p>
+            <p class="card_txt"><b><small class="text-muted">Atualizado em:02/09/2020</small></b></p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="conteudo container" id="conteudo">
+    <div class=" cima">
+      <div class="projetos_titulo">
+        <h2 class="titulo">Recomendação de Conteúdo</h2>
+      </div>
+    </div>
+    <div class="row lista_conteudo">
+      <div class="card col-md-6 col-lg-4 col-sm-12">
+        <iframe src="https://www.youtube.com/embed/8RAG7yN_J20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5><b>Vídeo:</b> Descrição</h5>
+          <p><Strong>Diretor:</Strong> Nome do Diretor</p>
+          <span><Strong>Roteiro:</Strong> Nome do Roteirista</span>
+          <span><Strong>Estreia:</Strong> 2020</span>
+        </div>
+      </div>
+      <div class="card col-md-6 col-lg-4 col-sm-12">
+        <iframe src="https://www.youtube.com/embed/8RAG7yN_J20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5><b>Vídeo:</b> Descrição</h5>
+          <p><Strong>Diretor:</Strong> Nome do Diretor</p>
+          <span><Strong>Roteiro:</Strong> Nome do Roteirista</span>
+          <span><Strong>Estreia:</Strong> 2020</span>
+        </div>
+      </div>
+      <div class="card col-md-6 col-lg-4 col-sm-12">
+        <iframe src="https://www.youtube.com/embed/8RAG7yN_J20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5><b>Vídeo:</b> Descrição</h5>
+          <p><Strong>Diretor:</Strong> Nome do Diretor</p>
+          <span><Strong>Roteiro:</Strong> Nome do Roteirista</span>
+          <span><Strong>Estreia:</Strong> 2020</span>
+        </div>
+      </div>
+    </div>
+    <div class=" btn_projetos">
+      <button type="button" class="btn btn-dark carregar">+ Carregar mais projetos</button>
+    </div>
+    <hr>
+  </section>
+  <footer>
+    <p>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b></p>
+    <img src="./imgs/logo-puc-minas.png" alt="">
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
