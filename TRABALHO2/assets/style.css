@@ -30,11 +30,23 @@ body{
 header{
   margin-bottom: 30px;
 }
+.perfil_img{
+  display: flex;
+  justify-content:center;
+}
 .perfil_img img{
-  width: 100%;
+  width: 50%;
+  border-radius: 50%;
 }
 .perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
+}
+
+.perfil_txt ul{
+  list-style: none;
 }
 .perfil strong{
   color:  crimson;
