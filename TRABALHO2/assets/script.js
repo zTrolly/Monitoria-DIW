@@ -1,5 +1,5 @@
 const URL = "https://api.github.com/";
-let user = "users/jessicaagoulart";
+let user = "users/ztrolly";
 const COMPLETE = URL  + user;
 
 async function exibir(){
