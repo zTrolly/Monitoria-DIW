@@ -1,5 +1,5 @@
 const URL = "https://api.github.com/";
-let user = "users/ztrolly";
+let user = "users/jessicaagoulart";
 const COMPLETE = URL  + user;
 
 async function exibir(){
@@ -7,8 +7,7 @@ async function exibir(){
   let display = document.getElementById("perfil");
   const d = await fetch(`${COMPLETE}`);
   const f = await d.json();
-  console.log(f);
-
+  // console.log(f);
   txt += `
   <div class="perfil_img col-md-6 col-lg-6 col-sm-12">
   <img src="${f.avatar_url}" alt="">
@@ -33,6 +32,4 @@ async function exibir(){
 
   display.innerHTML = txt;
 }
-
-
 exibir();
