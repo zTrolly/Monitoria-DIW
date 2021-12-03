@@ -2,21 +2,16 @@
   const URL = "https://api.github.com/users/";
   var input = document.getElementById("input-pesquisa").value;
   const URL_PESQUISA =  URL + input;
-  const display = document.getElementById("display-pesquisa")
-  console.log(input);
-
-
+  const display = document.getElementById("display-pesquisa");
   let txt = "";
  const d = await fetch(`${URL_PESQUISA}`);
  const f = await d.json();
- console.log(f);
-
  txt += `
  <div class="perfil_img col-md-6 col-lg-6 col-sm-12">
  <img src="${f.avatar_url}" alt="">
  </div>
  <div class="perfil_txt col-md-6 col-lg-6 col-sm-12">
-   <h1 class="nome">${f.name}<strong>.</strong></h1>
+   <h1 class="nome">${f.login}<strong>.</strong></h1>
    <ul>
      <li><p><strong>Ativo no GitHub desde:</strong>  ${f.created_at}</p></li>
      <li><p><strong>Número de repositorios:</strong>  ${f.public_repos}</p></li>
